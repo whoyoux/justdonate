@@ -19,7 +19,7 @@
         </div>
         <div class="desc">{{ desc }}</div>
         <div class="text-center">
-          <button class="btn-donate">Donate</button>
+          <button class="btn-donate">donate</button>
         </div>
       </div>
       <div v-else class="text-center">
@@ -106,15 +106,18 @@ export default {
   grid-area: title;
   display: grid;
   place-items: center;
+  font-size: 1.45rem;
 }
 .info {
   grid-area: info;
   display: grid;
   place-items: center;
+  font-size: 1.4rem;
 }
 .desc {
   padding-top: 25px;
   text-align: left;
+  font-size: 18px;
 }
 
 .text-center {
@@ -122,20 +125,37 @@ export default {
 }
 
 .btn-donate {
+  margin-top: 25px;
   padding: 12px;
-  border-radius: var(--border-radius);
-  background-color: var(--color-primary);
-  border: none;
-  color: white;
+  width: 200px;
+  height: 67px;
   font-size: 1.5rem;
+  letter-spacing: 2px;
+
+  background-color: #fff;
+  box-shadow: 2px 4px 5px 0px rgba(255, 78, 78, 0.45);
+  border: 2px solid #e05050;
+  color: #e05050;
+  background-image: linear-gradient(45deg, #e05050 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: all 350ms ease-in-out;
+  border-radius: var(--border-radius);
+  cursor: pointer;
 }
 
 .btn-donate:hover {
+  background-position: 0;
+  color: white;
 }
 
 @media (max-width: 991px) {
   .wrapper {
     width: 90%;
+  }
+
+  .btn-donate {
+    width: 65%;
   }
 }
 
@@ -153,6 +173,10 @@ export default {
       "photo"
       "info"
       "desc";
+  }
+  .btn-donate {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 </style>
