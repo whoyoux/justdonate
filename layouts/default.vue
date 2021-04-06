@@ -15,14 +15,13 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Quando&display=swap");
-
 :root {
   --color-primary: #e05050;
+  --border-radius: 8px;
 }
 
 body {
-  font-family: "Quando", serif;
+  font-family: "Quando", sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;

@@ -19,7 +19,7 @@
         </div>
         <div class="desc">{{ desc }}</div>
         <div class="text-center">
-          <button>Donate</button>
+          <button class="btn-donate">Donate</button>
         </div>
       </div>
       <div v-else class="text-center">
@@ -100,7 +100,7 @@ export default {
   grid-area: photo;
 }
 .photo img {
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 }
 .title {
   grid-area: title;
@@ -119,6 +119,18 @@ export default {
 
 .text-center {
   text-align: center;
+}
+
+.btn-donate {
+  padding: 12px;
+  border-radius: var(--border-radius);
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.btn-donate:hover {
 }
 
 @media (max-width: 991px) {

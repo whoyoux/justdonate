@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h3 class="header__title">justdonate</h3>
+    <NuxtLink to="/"><h3 class="header__title">justdonate</h3></NuxtLink>
     <button class="header__btn">justcreate</button>
   </header>
 </template>

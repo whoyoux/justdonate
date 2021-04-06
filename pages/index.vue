@@ -52,4 +52,10 @@
 .mt-1 {
   margin-top: 1.5rem;
 }
+
+@media (max-width: 540px) {
+  .container {
+    text-align: center;
+  }
+}
 </style>
