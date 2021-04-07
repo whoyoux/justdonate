@@ -14,7 +14,8 @@
             <h1>{{ title }}</h1>
           </div>
           <div class="info text-center">
-            <h3>{{ firstName }} {{ lastName }}</h3>
+            <h3 class="text-red" style="margin-bottom: 0">{{ username }}</h3>
+            <h3 style="margin-top: 0">{{ firstName }} {{ lastName }}</h3>
           </div>
         </div>
         <div class="desc">{{ desc }}</div>
@@ -23,7 +24,7 @@
         </div>
       </div>
       <div v-else class="text-center">
-        <h1>Page doesn't exist. You can create it!</h1>
+        <h1>Page doesn't exist. If you want you can claim it!</h1>
       </div>
     </div>
     <div v-else>
@@ -117,7 +118,7 @@ export default {
 .desc {
   padding-top: 25px;
   text-align: left;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .text-center {

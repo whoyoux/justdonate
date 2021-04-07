@@ -149,9 +149,18 @@ export default {
   box-shadow: 2px 2px 10px #000;
 }
 
+@media (max-width: 991px) {
+  .container__img {
+    height: auto;
+  }
+}
+
 @media (max-width: 540px) {
   .container {
     text-align: center;
+  }
+  .container__img {
+    height: auto;
   }
 }
 </style>
